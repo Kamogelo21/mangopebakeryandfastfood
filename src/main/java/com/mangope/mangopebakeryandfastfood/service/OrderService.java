@@ -1,20 +1,25 @@
 package com.mangope.mangopebakeryandfastfood.service;
 
 import com.mangope.mangopebakeryandfastfood.model.Order;
+import com.mangope.mangopebakeryandfastfood.repository.OrderRepository;
 import org.springframework.stereotype.Service;
-import java.util.ArrayList;
+
 import java.util.List;
 
 @Service
 public class OrderService {
 
-    private List<Order> orders = new ArrayList<>();
+    private final OrderRepository orderRepository;
 
-    public void saveOrder(Order order) {
-        orders.add(order);
+    public OrderService(OrderRepository orderRepository) {
+        this.orderRepository = orderRepository;
+    }
+
+    public Order saveOrder(Order order) {
+        return orderRepository.save(order);
     }
 
     public List<Order> getAllOrders() {
-        return orders;
+        return orderRepository.findAll();
     }
 }
