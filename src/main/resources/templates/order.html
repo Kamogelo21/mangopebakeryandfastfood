@@ -1,12 +1,28 @@
-<form action="/submitOrder" method="post">
-    <label>Name:</label>
-    <input type="text" name="name" required>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
 
-    <label>Item:</label>
-    <input type="text" name="item" required>
+<nav>
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/menu}">Menu</a>
+    <a th:href="@{/order}">Order</a>
+</nav>
 
-    <label>Quantity:</label>
-    <input type="number" name="quantity" required>
+<div class="container">
+    <h1>Place Your Order 💗</h1>
 
-    <button type="submit">Order 💕</button>
-</form>
+    <form action="/submitOrder" method="post">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="text" name="item" placeholder="Item" required><br>
+        <input type="number" name="quantity" placeholder="Quantity" required><br>
+
+        <button type="submit">Order 💕</button>
+    </form>
+</div>
+
+</body>
+</html>

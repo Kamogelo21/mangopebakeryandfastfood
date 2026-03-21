@@ -5,22 +5,27 @@
 </head>
 <body>
 
-<h1>All Orders 💗</h1>
+<nav>
+    <a href="/">Home</a>
+</nav>
 
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Item</th>
-        <th>Quantity</th>
-    </tr>
+<div class="container">
+    <h1>All Orders 💗</h1>
 
-    <tr th:each="order : ${orders}">
-        <td th:text="${order.name}"></td>
-        <td th:text="${order.item}"></td>
-        <td th:text="${order.quantity}"></td>
-    </tr>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Item</th>
+            <th>Quantity</th>
+        </tr>
 
-</table>
+        <tr th:each="order : ${orders}">
+            <td th:text="${order.name}"></td>
+            <td th:text="${order.item}"></td>
+            <td th:text="${order.quantity}"></td>
+        </tr>
+    </table>
+</div>
 
 </body>
 </html>

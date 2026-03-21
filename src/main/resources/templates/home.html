@@ -5,8 +5,22 @@
     <link rel="stylesheet" th:href="@{/styles.css}">
 </head>
 <body>
-<h1>Welcome to Pink Bakery 💕</h1>
-<a th:href="/menu">View Menu</a>
-<a th:href="/order">Order Now</a>
+
+<nav>
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/menu}">Menu</a>
+    <a th:href="@{/order}">Order</a>
+</nav>
+
+<div class="container">
+    <h1>Welcome to Pink Bakery 💕</h1>
+    <p>Freshly baked happiness every day 🍰</p>
+
+    <div class="card">
+        <h3>Explore our treats</h3>
+        <a th:href="@{/menu}"><button>View Menu</button></a>
+    </div>
+</div>
+
 </body>
 </html>

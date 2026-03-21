@@ -2,17 +2,25 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Order Confirmation 💗</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" th:href="{@/styles.css}">
 </head>
 <body>
 
-<h1>Thank you for your order 💕</h1>
+<nav>
+    <a href="/">Home</a>
+</nav>
 
-<p>Name: <span th:text="${order.name}"></span></p>
-<p>Item: <span th:text="${order.item}"></span></p>
-<p>Quantity: <span th:text="${order.quantity}"></span></p>
+<div class="container">
+    <div class="card">
+        <h1>Thank you 💕</h1>
 
-<a href="/">Back to Home</a>
+        <p><strong>Name:</strong> <span th:text="${order.name}"></span></p>
+        <p><strong>Item:</strong> <span th:text="${order.item}"></span></p>
+        <p><strong>Quantity:</strong> <span th:text="${order.quantity}"></span></p>
+
+        <a href="/"><button>Back Home</button></a>
+    </div>
+</div>
 
 </body>
 </html>

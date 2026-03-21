@@ -5,12 +5,32 @@
     <link rel="stylesheet" th:href="@{/styles.css}">
 </head>
 <body>
-<h1>Our Treats 🍰</h1>
-<ul>
-    <li>Cupcakes</li>
-    <li>Chocolate Cake</li>
-    <li>Cookies</li>
-</ul>
-<a th:href="/order">Order Here 💗</a>
+<nav>
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/menu}">Menu</a>
+    <a th:href="@{/order}">Order</a>
+</nav>
+
+<div class="container">
+    <h1>Our Treats 🍰</h1>
+
+    <div class="card">
+        <h3>Cupcakes</h3>
+        <p>Soft, sweet, and delicious 💗</p>
+    </div>
+
+    <div class="card">
+        <h3>Chocolate Cake</h3>
+        <p>Rich and indulgent 🍫</p>
+    </div>
+
+    <div class="card">
+        <h3>Cookies</h3>
+        <p>Crunchy and warm 🍪</p>
+    </div>
+
+    <a th:href="@{/order}"><button>Order Now 💕</button></a>
+</div>
+
 </body>
 </html>
