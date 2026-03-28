@@ -12,7 +12,7 @@
     <a th:href="@{/order}">Order</a>
 </nav>
 
-<div class="container">
+<div class="order-title">
     <h1>Place Your Order 💗</h1>
 
     <form th:action="@{/submitOrder}" method="post" th:object="${order}">
@@ -48,8 +48,8 @@
             <option value="20">20L</option>
         </select>
 
-        <p style="color: red; font-size: 14px;">
-            ⚠ Orders require at least 2 weeks notice. We will contact you to confirm details.
+        <p class="notice" style="color: red; font-size: 14px;">
+            ⚠ Orders require at least 2 weeks notice. We will reach out to you to confirm details.
         </p>
 
         <button type="submit">Order 💕</button>

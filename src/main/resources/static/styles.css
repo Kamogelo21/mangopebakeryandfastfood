@@ -1,128 +1,247 @@
+/* ====================================
+   GLOBAL STYLES
+===================================== */
+
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ede0d4; /* soft cream */
+    color: #3e3e3e;
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #ffe4ec, #ffd6e0);
-    color: #5a2a41;
+    padding: 0;
 }
 
-/* Navbar */
+/* Container */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================================
+   NAVIGATION BAR
+========================================= */
+
 nav {
-    background-color: #ff85a2;
+    background-color: #6f4e37; /* coffee brown */
     padding: 15px;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: #f8f5f2;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Container */
-.container {
-    padding: 30px;
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   BUTTONS (Used across pages)
+========================================= */
+
+button,
+.btn {
+    background-color: #a67c52; /* warm brown */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #8b5e3c;
+}
+
+/* =========================================
+   FORMS (Order page mainly)
+========================================= */
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d6ccc2;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Disclaimer / Notice */
+.notice {
+    background-color: #ede0d4;
+    color: #5a3e2b;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* =========================================
+   HOME PAGE
+========================================= */
+
+/* =========================================
+   HOME HERO SECTION
+========================================= */
+
+.hero {
+    background-image: url('/images/home-image.png'); /* your image path */
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+/* Dark overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Text styling */
+.hero-content {
+    position: relative;
+    color: white;
     text-align: center;
 }
 
-/* Cards */
-.card {
-    background: white;
-    padding: 20px;
-    margin: 15px auto;
-    border-radius: 15px;
-    width: 250px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
-/* Buttons */
-button {
-    background-color: #ff85a2;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
+.hero-content p {
+    font-size: 1.2em;
 }
 
-button:hover {
-    background-color: #ff5c8a;
+.home-subtext {
+    text-align: center;
+    font-size: 1.2em;
+    color: #7a7a7a;
 }
 
-/* Inputs */
-input {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    width: 200px;
+.home-content {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.notice {
-    background-color: #ffe4e1;
-    color: #d6336c;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-/* Table (admin page) */
-table {
-    margin: auto;
-    border-collapse: collapse;
-    width: 70%;
-}
-
-th, td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
+/* =========================================
+   MENU PAGE
+========================================= */
 
 .menu-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.card img {
-    width: 100%;
-    height: 150px;   /* controls height */
-    object-fit: cover; /* keeps image nice, not stretched */
+.menu-item {
+    background-color: #fff;
     border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
 }
-/* admin */
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+}
+
+.menu-item p {
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+/* =========================================
+   ORDER PAGE
+========================================= */
+
+.order-title {
+    text-align: center;
+}
+
+.order-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* =========================================
+   CONFIRMATION PAGE
+========================================= */
+
+.confirmation-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.confirmation-box h2 {
+    color: #6f4e37;
+}
+
+/* =========================================
+   ADMIN DASHBOARD
+========================================= */
+
+.admin-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-    text-align: left;
+    background-color: #fff;
 }
 
 th {
-    background-color: #ffb6c1;
+    background-color: #6f4e37;
     color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
 tr:hover {
-    background-color: #ffe4e1;
+    background-color: #f1ede8;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #ff69b4;
+/* =========================================
+   FOOTER (Optional)
+========================================= */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #6f4e37;
     color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-.btn:hover {
-    background-color: #ff1493;
+    margin-top: 30px;
 }

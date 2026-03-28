@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Pink Bakery</title>
+    <title>Mangope Bakery</title>
     <link rel="stylesheet" th:href="@{/styles.css}">
 </head>
 <body>
@@ -12,14 +12,18 @@
     <a th:href="@{/order}">Order</a>
 </nav>
 
-<div class="container">
-    <h1>Welcome to Pink Bakery 💕</h1>
-    <p>Freshly baked happiness every day 🍰</p>
-
-    <div class="card">
-        <h3>Explore our treats</h3>
-        <a th:href="@{/menu}"><button>View Menu</button></a>
+<!-- HERO (only title inside) -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Mangope Bakery & Fast Food</h1>
+        <h2> Freshly baked with love 🍞 </h2>
     </div>
+</div>
+
+<!-- BELOW HERO -->
+<div class="container home-content">
+    <p class="home-subtext">Explore our treats</p>
+    <a th:href="@{/menu}" class="btn">View Menu</a>
 </div>
 
 </body>
