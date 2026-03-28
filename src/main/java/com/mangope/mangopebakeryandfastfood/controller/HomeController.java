@@ -51,7 +51,7 @@ public class HomeController {
         model.addAttribute("order", order);
 
         // Send email
-        String to = "vameno22@outlook.com";
+        String to = "ashleymotapane1@outlook.com";
         String subject = "New Order Received!";
         String text = "Order Details:\n" +
                 "Name: " + order.getName() + "\n" +
