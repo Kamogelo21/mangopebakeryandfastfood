@@ -138,7 +138,7 @@ select {
 
 .home-content {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 /* =========================================
@@ -188,6 +188,11 @@ select {
     margin: auto;
 }
 
+.order-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* =========================================
    CONFIRMATION PAGE
 ========================================= */
@@ -235,13 +240,188 @@ tr:hover {
 }
 
 /* =========================================
-   FOOTER (Optional)
+   FOOTER
 ========================================= */
 
 footer {
+    background-color: #d8c2b0; /* light brown/nude */
+    color: #4b3a2f;
     text-align: center;
-    padding: 15px;
-    background-color: #6f4e37;
-    color: white;
-    margin-top: 30px;
+    font-weight: bold;
+    padding: 2px 2px;
+}
+
+/*footer h3 {
+    margin-bottom: 10px;
+}*/
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-contacts {
+    margin: 15px 0;
+    gap: 5px;
+}
+
+.footer-contacts a {
+    display: inline-block;
+    margin: 2px 6px;
+    padding: 5px 9px;
+    background-color: #d8c2b0;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.footer-contacts a:hover {
+    background-color: #9c6243;
+}
+
+/* ================= FOOTER ICONS ================= */
+.footer-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0.5px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    transform: scale(1.1);
+}
+/* === copy === */
+.footer-copy {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #3d2e23;
+}
+
+/* =========================================
+   ABOUT SECTION (Home preview)
+========================================= */
+
+/* ====== ABOUT + MENU BUTTON ====== */
+.about-preview {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-button .btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #d68a59; /* matches your theme */
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu-button .btn:hover {
+    background-color: #b76a40;
+}
+
+/* ================= ABOUT LINK ================= */
+.about-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #8b5e3c; /* your brown theme */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.about-link:hover {
+    color: #b76a40;
+    text-decoration: underline;
+}
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* ==============================
+      FAST FOOD TEASER
+============================= */
+.fast-food-section {
+    background-color: #f5f0e7; /* light nude / cream */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 40px auto;
+}
+
+.fast-food-section h2 {
+    font-size: 28px;
+    color: #8b5e3c; /* darker brown for titles */
+    margin-bottom: 15px;
+}
+
+.fast-food-section p {
+    font-size: 16px;
+    color: #5c4033; /* soft brown for text */
+    margin-bottom: 25px;
+}
+
+.fast-food-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.food-card {
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #fff8f2;
+}
+
+.food-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.food-card p {
+    margin: 8px 0;
+    font-weight: 500;
+    color: #5c4033;
+}
+
+.btn-ubereats {
+    display: inline-block;
+    background-color: #d68a59; /* warm brown button */
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-ubereats:hover {
+    background-color: #b76a40;
+}
+
+.fast-food-disclaimer {
+    font-size: 14px;
+    color: #a0522d;
+    margin-top: 20px;
 }

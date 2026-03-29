@@ -10,6 +10,7 @@
     <a th:href="@{/}">Home</a>
     <a th:href="@{/menu}">Menu</a>
     <a th:href="@{/order}">Order</a>
+    <a th:href="@{/about}">About</a>
 </nav>
 
 <!-- HERO (only title inside) -->
@@ -17,14 +18,74 @@
     <div class="hero-content">
         <h1>Mangope Bakery & Fast Food</h1>
         <h2> Freshly baked with love 🍞 </h2>
+        <a th:href="@{/menu}" class="btn">View Menu</a>
     </div>
 </div>
 
-<!-- BELOW HERO -->
-<div class="container home-content">
-    <p class="home-subtext">Explore our treats</p>
-    <a th:href="@{/menu}" class="btn">View Menu</a>
+<div class="about-preview">
+    <h2>About Us</h2>
+    <p>
+        Mangope Bakery & Fast Food specializes in freshly baked goods and
+        delicious fast food, prepared with care and sold in convenient bulk options.
+
+        <a th:href="@{/about}" class="about-link">Learn More →</a>
+    </p>
 </div>
 
+<div class="menu-button">
+    <a href="/menu" class="btn">View Menu</a>
+</div>
+
+<section id="fast-food-teaser" class="fast-food-section">
+    <h2>Craving something savory?</h2>
+    <p>Check out our fast food available on
+        <a href="https://www.ubereats.com/store-browse-uuid/48375fdc-f789-5772-9dc6-8e54a74e02b2?diningMode=DELIVERY"
+           target="_blank">UberEats</a>!
+    </p>
+
+    <div class="fast-food-gallery">
+        <div class="food-card">
+            <img src="/images/ff-image1.jpg" alt="Kota">
+            <p>Yonkeyonke</p>
+        </div>
+        <div class="food-card">
+            <img src="/images/ff-image2.jpg" alt="Kota">
+            <p>ReaVaya</p>
+        </div>
+        <div class="food-card">
+            <img src="/images/ff-image3.jpg" alt="Kota">
+            <p>Bozza</p>
+        </div>
+        <div class="food-card">
+            <img src="/images/ff-image4.jpg" alt="Chips">
+            <p>Chips</p>
+        </div>
+    </div>
+
+    <a href="https://www.ubereats.com/store-browse-uuid/48375fdc-f789-5772-9dc6-8e54a74e02b2?diningMode=DELIVERY"
+       class="btn btn-ubereats">Order Fast Food</a>
+
+    <p class="fast-food-disclaimer">
+        Fast food is available via UberEats only; bakery items are sold here.
+    </p>
+</section>
+
+<footer>
+    <div class="footer-contacts">
+        <p> For inquiries: </p>
+        <a href="https://wa.me/27685962483" target="_blank">
+            <img src="/images/whatsapp.jpg" alt="WhatsApp" class="footer-icon">
+            <p> WhatsApp us </p>
+        </a>
+        <a href="mailto:ashleymotapane1@outlook.com">
+            <img src="/images/email.jpg" alt="Email" class="footer-icon">
+            <p> Email us </p>
+        </a>
+    </div>
+
+    <p class="footer-copy">
+        &copy; 2026 Mangope Bakery & Fast Food. All Rights Reserved.
+    </p>
+</footer>
 </body>
 </html>

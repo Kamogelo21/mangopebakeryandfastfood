@@ -10,6 +10,7 @@
     <a th:href="@{/}">Home</a>
     <a th:href="@{/menu}">Menu</a>
     <a th:href="@{/order}">Order</a>
+    <a th:href="@{/about}">About</a>
 </nav>
 
 <div class="order-title">
@@ -53,40 +54,30 @@
         </p>
 
         <button type="submit">Order 💕</button>
+        <p>
+
+        </p>
     </form>
 </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const itemSelect = document.getElementById("itemSelect");
-        const sizeSelect = document.getElementById("sizeSelect");
+<script src="/js/order.js"></script>
 
-        if (!itemSelect || !sizeSelect) return;
+<footer>
+        <div class="footer-contacts">
+            <p> For inquiries: </p>
+            <a href="https://wa.me/27685962483" target="_blank">
+                <img src="/images/whatsapp.jpg" alt="WhatsApp" class="footer-icon">
+                <p> WhatsApp us </p>
+            </a>
+            <a href="mailto:ashleymotapane1@outlook.com">
+                <img src="/images/email.jpg" alt="Email" class="footer-icon">
+                <p> Email us </p>
+            </a>
+        </div>
 
-        itemSelect.addEventListener("change", function () {
-            const selectedItem = itemSelect.value;
-
-            // Default options
-            let options = `
-                <option value="">Select Size</option>
-                <option value="5">5L</option>
-                <option value="10">10L</option>
-                <option value="20">20L</option>
-            `;
-
-            // Lamington: remove 5L
-            if (selectedItem === "Lamington") {
-                options = `
-                    <option value="">Select Size</option>
-                    <option value="10">10L</option>
-                    <option value="20">20L</option>
-                `;
-            }
-
-            sizeSelect.innerHTML = options;
-        });
-    });
-</script>
-
+        <p class="footer-copy">
+            &copy; 2026 Mangope Bakery & Fast Food. All Rights Reserved.
+        </p>
+</footer>
 </body>
 </html>

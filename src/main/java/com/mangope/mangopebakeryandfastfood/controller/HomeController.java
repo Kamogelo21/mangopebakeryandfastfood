@@ -106,4 +106,9 @@ public class HomeController {
         writer.flush();
         writer.close();
     }
+
+    @GetMapping("/about")
+    public String about() {
+        return "about";
+    }
 }
