@@ -209,6 +209,13 @@ select {
     color: #a0522d; /* softer brown/red tone */
 }
 
+.dessert-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 /* =========================================
    ORDER PAGE
 ========================================= */
