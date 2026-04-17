@@ -266,12 +266,38 @@ select {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    background: #f8f5f2;
+    border-radius: 8px;
+
     margin: 10px 0;
+    margin: 12px auto;
+    padding: 10px 20px;   /* 👈 pushes content inward */
+    max-width: 500px;     /* 👈 prevents edge stretching */
+    width: 90%;
+}
+
+.order-item label {
+    flex: 1;
 }
 
 .order-item input {
     width: 80px;
     padding: 5px;
+}
+
+.order-item-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px 15px;
+
+    background: #f8f5f2;
+    border-radius: 8px;
 }
 
 /* =========================================

@@ -37,37 +37,171 @@
 
         <h3>Select Items & Quantities</h3>
 
-        <!-- Plain Scones -->
-        <div class="order-item">
-            <label>Plain Scones (5L / 10L / 20L)</label>
-            <input type="number" name="plainSconesQty" min="0" placeholder="Qty">
+        <!-- Assorted Biscuits -->
+        <div class="order-item-row">
+            <label>Assorted Biscuits</label>
+
+            <select name="assortedBiscuitsSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
+            <input type="number" name="assortedBiscuitsQty" min="0" placeholder="Qty">
+        </div>
+
+        <!-- Eat Sumore -->
+        <div class="order-item-row">
+            <label>Eat Sumore</label>
+
+            <select name="eatsumoreSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
+            <input type="number" name="eatsumoreQty" min="0" placeholder="Qty">
         </div>
 
         <!-- Flavoured Scones -->
-        <div class="order-item">
+        <div class="order-item-row">
             <label>Flavoured Scones</label>
+
+            <select name="flavouredSconesSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
             <input type="number" name="flavouredSconesQty" min="0" placeholder="Qty">
         </div>
 
-        <!-- Queens Cakes -->
-        <div class="order-item">
-            <label>Queens Cakes</label>
-            <input type="number" name="queensCakesQty" min="0" placeholder="Qty">
-        </div>
+        <!-- Ginger Biscuits -->
+        <div class="order-item-row">
+            <label>Ginger Biscuits</label>
 
-        <!-- Snowballs -->
-        <div class="order-item">
-            <label>Snowballs / Red Cake</label>
-            <input type="number" name="snowballsQty" min="0" placeholder="Qty">
+            <select name="gingerBiscuitsSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
+            <input type="number" name="gingerBiscuitsQty" min="0" placeholder="Qty">
         </div>
 
         <!-- Jam Tarts -->
-        <div class="order-item">
+        <div class="order-item-row">
             <label>Jam Tarts</label>
+
+            <select name="jamTartsSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
             <input type="number" name="jamTartsQty" min="0" placeholder="Qty">
         </div>
 
-        <!-- Add more items same pattern -->
+        <div class="order-item-row">
+            <label>Lamingtons</label>
+
+            <select name="lamingtonsSize">
+                <option value="">Size</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
+            <input type="number" name="lamingtonsQty" min="0" placeholder="Qty">
+        </div>
+
+        <!-- Lemon Creams -->
+        <div class="order-item-row">
+            <label>Lemon Creams</label>
+
+            <select name="lemonCreamsSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
+            <input type="number" name="lemonCreamsQty" min="0" placeholder="Qty">
+        </div>
+
+        <!-- Melting Moments -->
+        <div class="order-item-row">
+            <label>Melting Moments</label>
+
+            <select name="meltingMomentsSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
+            <input type="number" name="meltingMomentsQty" min="0" placeholder="Qty">
+        </div>
+
+        <!-- Queens Cakes -->
+        <div class="order-item-row">
+            <label>Queens Cakes</label>
+
+            <select name="queensCakesSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
+            <input type="number" name="queensCakesQty" min="0" placeholder="Qty">
+        </div>
+
+        <!-- Romany Creams -->
+        <div class="order-item-row">
+            <label>Romany Creams</label>
+
+            <select name="romanyCreamsSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
+            <input type="number" name="romanyCreamsQty" min="0" placeholder="Qty">
+        </div>
+
+        <!-- Snowballs -->
+        <div class="order-item-row">
+            <label>Snowballs / Red Cake</label>
+
+            <select name="snowballsSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
+            <input type="number" name="snowballsQty" min="0" placeholder="Qty">
+        </div>
+
+        <!-- Plain Scones -->
+        <div class="order-item-row">
+            <label>Plain Scones</label>
+
+            <select name="plainSconesSize">
+                <option value="">Size</option>
+                <option value="5L">5L</option>
+                <option value="10L">10L</option>
+                <option value="20L">20L</option>
+            </select>
+
+            <input type="number" name="plainSconesQty" min="0" placeholder="Qty">
+        </div>
 
         <p class="notice" style="color: red; font-size: 14px;">
             ⚠ Orders require at least a day's notice. We will reach out to you to confirm details.
