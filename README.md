@@ -26,12 +26,12 @@ Customers can build multi-item orders with different sizes and quantities, while
 
 ✅ Confirmation Page
 <p align="center">
-  <img src="screenshots/confirmation.png" width="600">
+  <img src="screenshots/confirmation.png" width="400">
 </p>
 
 🔐 Admin Dashboard
 <p align="center">
-  <img src="screenshots/admin.png" width="600">
+  <img src="screenshots/admin.png" width="400">
 </p>
 
 🔥 Features
