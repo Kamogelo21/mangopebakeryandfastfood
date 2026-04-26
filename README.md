@@ -14,20 +14,20 @@ Customers can build multi-item orders with different sizes and quantities, while
 🖼️ Screenshots
 
 🏠 Home Page
-![Home](screenshots/home1.png)
-![Home](screenshots/home2.png)
+![Home](src/main/resources/static/images/screenshots/home1.png)
+![Home](src/main/resources/static/images/screenshots/home2.png)
 
 🧾 Order Builder
-![Order](screenshots/order-builder.png)
+![Order](src/main/resources/static/images/screenshots/order-builder.png)
 
 📦 Order Summary
-![Order](screenshots/order-summary.png)
+![Order](src/main/resources/static/images/screenshots/order-summary.png)
 
 ✅ Confirmation Page
-![Confirmation](screenshots/confirmation.png)
+![Confirmation](src/main/resources/static/images/screenshots/confirmation.png)
 
 🔐 Admin Dashboard
-![Admin](screenshots/admin.png)
+![Admin](src/main/resources/static/images/screenshots/admin.png)
 
 🔥 Features
 
